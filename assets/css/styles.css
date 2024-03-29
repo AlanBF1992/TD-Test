@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   --background-navbar: rgba(0,0,0,0);
@@ -14,11 +14,9 @@ html {
 }
 
 body {
-  font-family: "Cabin", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* padding-top: 60px; */
 }
 
 header {
@@ -41,7 +39,6 @@ header {
 }
 
 .navbar-brand, .brand {
-  font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
@@ -54,6 +51,7 @@ header {
 
 .navbar-brand img {
   height: 48px;
+  margin-right: 10px;
 }
 
 .nav-item {
@@ -78,6 +76,7 @@ header {
 
 .sectionTitle {
   font-size: 30px;
+  font-weight: 400;
 }
 
 hr {
