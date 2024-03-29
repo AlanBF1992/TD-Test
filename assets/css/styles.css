@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap');
+
+:root {
+  --background-navbar: rgba(0,0,0,0);
+  --background-navbar-small: darkcyan;
+  --background-general: #000000;
+  --background-bars: darkcyan ;
+  --background-cards: darkcyan ;
+  --button-border-color: #DDDDDD;
+  --horizontal-bar-color: #000000;
+  --carousel-inactive-color: #373A3C31;
+  --carousel-active-color: #373A3C;
+  --text-color-dark: #373A3C;
+  --text-color-light: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* padding-top: 60px; */
+}
+
+header {
+  height: 60px;
+}
+
+.navbar {
+  background-color: var(--background-navbar);
+  padding-left: clamp(20px, 6.25%, 150px);
+  padding-right: clamp(20px, 6.25%, 150px);
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
+  .navbar {
+    background-color: var(--background-navbar-small);
+  }
+}
+
+.navbar-brand, .brand {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.navbar-brand {
+  height: 60px;
+}
+
+.navbar-brand img {
+  height: 48px;
+}
+
+.nav-item {
+  font-size: 18px;
+}
+
+.nav-item a {
+  color: var(--text-color-light) !important;
+}
+
+#quienesSomos, #destacados, #contacto {
+  background-color: var(--background-general);
+  color: var(--text-color-light);
+  padding-top: 60px;
+  padding-left: clamp(20px, 10%, 200px);
+  padding-right: clamp(20px, 10%, 200px);
+}
+
+#contacto {
+  padding-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 30px;
+}
+
+hr {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.qs-part-text {
+  font-size: 16px;
+}
+
+
+.qs-part-bar {
+  background-color:var(--background-bars);
+  color: white;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--background-cards);
+  color: var(--text-color-light);
+}
+.card-img-top {
+  height: 200px;
+}
+
+.card-text {
+
+}
+
+footer {
+  background-color: var(--background-cards);
+  color: var(--text-color-light);
+  padding-left: clamp(20px, 15%, 200px);
+  padding-right: clamp(20px, 15%, 200px);
+  height: 100px;
+  font-size: 30px;
+}
+
+#footer-icons i {
+  padding-left: 5px;
+  padding-right: 5px;
+}
