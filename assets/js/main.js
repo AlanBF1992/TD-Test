@@ -2,7 +2,7 @@
 const myCarousel = document.querySelector("#carouselViajes");
 
 const carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 2000,
+  interval: 5000,
   pause: false
 });
 
@@ -10,9 +10,9 @@ carousel.cycle();
 
 // Color del navbar
 
-const scrollOffsetLimit = 400;
+const scrollOffsetLimit = $(window).height()*0.75;
 
-$(document).scroll(function() {
+$(window).scroll(function() {
   if ($(this).width() < 768) {
     return;
   }
