@@ -35,3 +35,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
       scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
 });
+
+// Popovers
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
